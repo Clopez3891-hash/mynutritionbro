@@ -43,3 +43,23 @@ Stop the app with Ctrl+C.
 - No dashboard, graphs, goals, or calorie calculations yet.
 - Entries cannot be edited or deleted yet.
 - Weight is entered in pounds only.
+
+
+## Sprint 2: Daily calorie target
+
+### New prerequisites
+- Run `pip install -r requirements.txt` (now includes pytest).
+
+### Try the new feature
+1. From the project root, run `python goal_cli.py`.
+2. Choose 1 to log your weight in lbs (press Enter for today's date).
+3. Choose 2 and enter goal weight (lbs), a future goal date (YYYY-MM-DD), height (inches), age, sex (m/f), and activity calories. Your daily calorie target is shown. A past goal date shows an error.
+
+### Run the automated tests
+From the project root: `python -m pytest -v`
+
+### Known limitations
+- Goal settings are entered each time, not saved.
+- The estimate uses 3,500 calories per pound.
+- This menu is separate from the Sprint 1 app screens; both use the same nutrition.db.
+- Not done this sprint (planned for Sprint 3): weight history with date filtering, weekly calorie adjustment suggestions, and connecting the calorie target to the main app pages.
